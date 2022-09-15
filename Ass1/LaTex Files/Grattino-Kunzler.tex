@@ -13,6 +13,7 @@
 
 \documentclass[12pt]{amsart}
 \usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
 \geometry{letterpaper} % or letter or a5paper or ... etc
 % \geometry{landscape} % rotated page geometry
 
@@ -32,24 +33,61 @@
 \section*{Part A - 3 People Crossing}
 
 \subsection*{a}
-Place answer to part a here
+\begin{tabular}{ c c }
+A is Alice & Painting is 20 \\
+B is Bob & Vase is 12 \\
+C is Carol & Sculpture is 8
 
+\end{tabular}
 \subsection*{b}
-Place answer to part b here
+\begin{tabular}{ c c c }
+
+$A_{20} B_{12}$ & | | & $C_{8}$ \\
+No one & | | & $A_{20} B_{12} C_{8}$
+
+\end{tabular}
 
 \subsection*{c}
-Place answer to part c here
+The sum of the net worth of the individuals cannot exceed the sum of the value of the art on a given side of the river.
 
 \subsection*{d}
-Place answer to part d here
+\begin{tabular}{ c c c c }
+
+$A_{20} B_{12}$ & | | & $C_{8}$ & \emph{C would cross the river with C's painting} \\
+
+$A_{20} B_{12} C$ & | | & $_{8}$ & \emph{C would go to the starting side without their Sculpture} \\
+
+$_{20} B C$ & | | & $A_{12} z_{8}$ & \emph{A would leave their Paining and cross the river with the Vase} \\
+
+$A_{20} B C$ & | | & $z_{12} z_{8}$ & \emph{A returns without the Vase and the Sculpture} \\
+
+$A_{20}$ & | | & $B_{12} C_{8}$ & \emph{Both B and C head over to the other side of the river} \\
+
+$A_{20} B_{12}$ & | | & $C_{8}$ & \emph{B heads back to the Western Bank with their Vase} \\
+
+$B_{12}$ & | | & $A_{20} C_{8}$ & \emph{A crosses with their Painting} \\
+
+$B_{12} C{8}$ & | | & $A_{20}$ & \emph{C would cross to the western bank their Sculpture} \\
+
+$_{12} z_{8}$ & | | & $A_{20} B C$ & \emph{B and C cross with their art} \\
+
+$A _{12} z_{8}$ & | | & $z_{20} B C$ & \emph{A will cross to the west with no Painting} \\
+
+$z_{8}$ & | | & $A_{20} B_{12} C$ & \emph{A would bring over B's Vase} \\
+
+$C_{8}$ & | | & $A_{20} B_{12}$ & \emph{C would return to get their art} \\
+
+No one & | | & $A_{20} B_{12} C_{8}$ & \emph{C would return with their art}
+
+\end{tabular}
 
 \section*{2 new people arrive}
 
 \subsection*{e}
-Place answer to part e here
+Send Carol back because Elisha and Carol's net worth is equal to Dave's Statue. 
 
 \subsection*{f}
-Place answer to part f here
+A and B must leave with their artwork.
 
 \newpage
 
@@ -70,12 +108,13 @@ AAAAAA \quad -\textgreater \quad AAABC (Rule 3) %output AAAAAA -> AAABC
 Using the rules 3, 1, and 2, in that order will add 3 As to any set of 3+ As. Using this knowledge going from eight As to 29 is just repeating rules 3, 1, and 2 7 times and you will have 29 As.
 
 \subsection*{c}
-place answer to part c here
+Using the rules given the amount of As will only increment by 3. Due to this fact it would not be possible to get from 11 to 31.
 
 \newpage
 
 \section*{Part C}
 \subsection*{a}
+
 
 \subsection*{b}
 
