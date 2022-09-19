@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  14 SEP 2022 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.24)  14 SEP 2022 23:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -139,7 +139,7 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
 )
-(./Grattino-Kunzler.aux)
+No file Grattino-Kunzler.aux.
 \openout1 = `Grattino-Kunzler.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -157,7 +157,6 @@ LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
-
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -202,50 +201,57 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./Grattino-Kunzler.toc)
+No file Grattino-Kunzler.toc.
 \tf@toc=\write3
 \openout3 = `Grattino-Kunzler.toc'.
 
 
-Underfull \vbox (badness 4995) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (65.73679pt too wide) in paragraph at lines 54--83
+Overfull \hbox (65.73679pt too wide) in paragraph at lines 56--85
  \OT1/cmr/bx/n/12 d.[] [] 
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
+02.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 98.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 102.
  [3] [4]
-(./Grattino-Kunzler.aux) ) 
+[5] (./Grattino-Kunzler.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2330 strings out of 478268
- 34065 string characters out of 5846347
- 341411 words of memory out of 5000000
+ 2326 strings out of 478268
+ 33981 string characters out of 5846347
+ 341416 words of memory out of 5000000
  20392 multiletter control sequences out of 15000+600000
  477203 words of font info for 59 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  69i,8n,76p,335b,206s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti12.pfb>
-Output written on Grattino-Kunzler.pdf (4 pages, 116968 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Grattino-Kunzler.pdf (5 pages, 153185 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

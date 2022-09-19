@@ -1,9 +1,12 @@
+\setcounter {tocdepth}{1}
 \contentsline {section}{\tocsection {}{}{Part A - 3 People Crossing}}{2}{}%
 \contentsline {subsection}{\tocsubsection {}{}{a}}{2}{}%
 \contentsline {subsection}{\tocsubsection {}{}{b}}{2}{}%
 \contentsline {subsection}{\tocsubsection {}{}{c}}{2}{}%
 \contentsline {subsection}{\tocsubsection {}{}{d}}{2}{}%
+\setcounter {tocdepth}{0}
 \contentsline {section}{\tocsection {}{}{2 new people arrive}}{2}{}%
+\setcounter {tocdepth}{1}
 \contentsline {subsection}{\tocsubsection {}{}{e}}{2}{}%
 \contentsline {subsection}{\tocsubsection {}{}{f}}{2}{}%
 \contentsline {section}{\tocsection {}{}{Part B}}{3}{}%
@@ -14,3 +17,20 @@
 \contentsline {subsection}{\tocsubsection {}{}{a}}{4}{}%
 \contentsline {subsection}{\tocsubsection {}{}{b}}{4}{}%
 \contentsline {subsection}{\tocsubsection {}{}{c}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{d}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{e}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{f}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{g}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{h}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{i}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{j}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{k}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{l}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{m}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{n}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{o}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{p}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{q}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{a}}{5}{}%
+\contentsline {subsection}{\tocsubsection {}{}{b}}{5}{}%
+\contentsline {subsection}{\tocsubsection {}{}{c}}{5}{}%

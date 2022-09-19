@@ -28,8 +28,10 @@
 \maketitle
 \tableofcontents
 
-\pagebreak
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 
+\pagebreak
+\setcounter{secnumdepth}{1}
 \section*{Part A - 3 People Crossing}
 
 \subsection*{a}
@@ -42,13 +44,13 @@ C is Carol & Sculpture is 8
 \subsection*{b}
 \begin{tabular}{ c c c }
 
-$A_{20} B_{12}$ & | | & $C_{8}$ \\
+$A_{20} B_{12} C_{8}$ & | | & No one \\
 No one & | | & $A_{20} B_{12} C_{8}$
 
 \end{tabular}
 
 \subsection*{c}
-The sum of the net worth of the individuals cannot exceed the sum of the value of the art on a given side of the river.
+The sum of the net worth of the individuals cannot be less than the sum of the value of the art on a given side of the river.
 
 \subsection*{d}
 \begin{tabular}{ c c c c }
@@ -57,9 +59,9 @@ $A_{20} B_{12}$ & | | & $C_{8}$ & \emph{C would cross the river with C's paintin
 
 $A_{20} B_{12} C$ & | | & $_{8}$ & \emph{C would go to the starting side without their Sculpture} \\
 
-$_{20} B C$ & | | & $A_{12} z_{8}$ & \emph{A would leave their Paining and cross the river with the Vase} \\
+$_{20} B C$ & | | & $A_{12}$ $_{8}$ & \emph{A would leave their Paining and cross the river with the Vase} \\
 
-$A_{20} B C$ & | | & $z_{12} z_{8}$ & \emph{A returns without the Vase and the Sculpture} \\
+$A_{20} B C$ & | | & $_{12}$ $_{8}$ & \emph{A returns without the Vase and the Sculpture} \\
 
 $A_{20}$ & | | & $B_{12} C_{8}$ & \emph{Both B and C head over to the other side of the river} \\
 
@@ -69,11 +71,11 @@ $B_{12}$ & | | & $A_{20} C_{8}$ & \emph{A crosses with their Painting} \\
 
 $B_{12} C{8}$ & | | & $A_{20}$ & \emph{C would cross to the western bank their Sculpture} \\
 
-$_{12} z_{8}$ & | | & $A_{20} B C$ & \emph{B and C cross with their art} \\
+$_{12}$ $_{8}$ & | | & $A_{20} B C$ & \emph{B and C cross with their art} \\
 
-$A _{12} z_{8}$ & | | & $z_{20} B C$ & \emph{A will cross to the west with no Painting} \\
+$A _{12}$ $_{8}$ & | | & $_{20} B C$ & \emph{A will cross to the west with no Painting} \\
 
-$z_{8}$ & | | & $A_{20} B_{12} C$ & \emph{A would bring over B's Vase} \\
+$_{8}$ & | | & $A_{20} B_{12} C$ & \emph{A would bring over B's Vase} \\
 
 $C_{8}$ & | | & $A_{20} B_{12}$ & \emph{C would return to get their art} \\
 
@@ -81,7 +83,9 @@ No one & | | & $A_{20} B_{12} C_{8}$ & \emph{C would return with their art}
 
 \end{tabular}
 
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \section*{2 new people arrive}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 
 \subsection*{e}
 Send Carol back because Elisha and Carol's net worth is equal to Dave's Statue. 
@@ -114,10 +118,49 @@ Using the rules given the amount of As will only increment by 3. Due to this fac
 
 \section*{Part C}
 \subsection*{a}
+$\Omega$(g)
+\subsection*{b}
+O(g)
+\subsection*{c}
+$\Omega$(g)
+\subsection*{d}
+$\Theta$(g)
+\subsection*{e}
+O(g)
+\subsection*{f}
+$\Theta$(g)
+\subsection*{g}
+$\Theta$(g)
+\subsection*{h}
+$\Omega$(g)
+\subsection*{i}
+$\Theta$(g)
+\subsection*{j}
+O(g)
+\subsection*{k}
+$\Omega$(g)
+\subsection*{l}
+$\Theta$(g)
+\subsection*{m}
+$\Omega$(g)
+\subsection*{n}
+O(g)
+\subsection*{o}
+$\Theta$(g)
+\subsection*{p}
+$\Omega$(g)
+\subsection*{q}
+O(g)
 
+\break
+
+\subsection*{a}
+Given $c < 1$ and that $c$ is a whole number $c^n$ will always be less than 1.
 
 \subsection*{b}
+Given that $c = 1$ and $n$ is a whole number $c^n$ will always equal 1. This is because when $\frac{1^{x}}{\infty}$ always equals 1.
 
 \subsection*{c}
+As long as $n$ is a even non-negative integer when calculating $\Theta(c^n)$ c will always be a positive. If $c = -5$ and $n = 2$ your result will be $\Theta(10)$ because the $n$ is even it brings the negative c to a positive. Same rule applies with a positive integer for c.
 
 \end{document}
