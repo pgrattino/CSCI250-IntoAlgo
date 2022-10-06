@@ -1,0 +1,14 @@
+\setcounter {tocdepth}{1}
+\contentsline {section}{\tocsection {}{1}{Graphs}}{2}{}%
+\contentsline {subsection}{\tocsubsection {}{}{1a) \hskip 1em\relax What is the cost of the minimum spanning tree?}}{2}{}%
+\contentsline {subsection}{\tocsubsection {}{}{1b) \hskip 1em\relax How many minimum spanning trees does it have?}}{2}{}%
+\contentsline {subsection}{\tocsubsection {}{}{1c) \hskip 1em\relax Tour of minimal spanning tree}}{2}{}%
+\contentsline {subsection}{\tocsubsection {}{}{2a) Prim's Sort}}{3}{}%
+\contentsline {subsection}{\tocsubsection {}{}{2b) Kruskal's Algorithm}}{3}{}%
+\contentsline {subsection}{\tocsubsection {}{}{3}}{3}{}%
+\contentsline {section}{\tocsection {}{2}{Cost / Complexity / Big O}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{Equation A}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{Equation B}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{Equation C}}{4}{}%
+\contentsline {subsection}{\tocsubsection {}{}{}}{4}{}%
+\contentsline {section}{\tocsection {}{3}{Algorithmic Efficiency}}{5}{}%

@@ -1,0 +1,163 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\geometry{letterpaper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Intro to Algorithms Assignment 2 Group Task}
+\author{Peyton Grattino \& Alex Kunzler}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+\pagebreak
+\setcounter{secnumdepth}{1}
+\section{Graphs}
+\subsection*{1a) \quad What is the cost of the minimum spanning tree?}
+\leavevmode
+\\ The cost of the minimum spanning tree is 19.
+
+\subsection*{1b) \quad How many minimum spanning trees does it have?}
+\leavevmode
+\\ There are two ways you can achieve this by swapping the edge E-B for B-F.
+
+\subsection*{1c) \quad Tour of minimal spanning tree}
+\begin{center}
+\begin{tabular}{ | c | c | c |}
+\hline
+Node Start & Node End & Weight \\
+\hline
+\hline
+A & E & 1 \\
+\hline
+E & F & 1 \\
+\hline
+B & F & 2 \\
+\hline
+B & E & 2 \\
+\hline
+F & G & 3 \\
+\hline
+G & H & 3 \\
+\hline
+C & G & 4 \\
+\hline
+B & C & 5 \\
+\hline
+C & F & 5 \\
+\hline
+D & G & 5 \\
+\hline
+A & B & 6 \\
+\hline
+C & D & 6 \\
+\hline
+D & H & 7 \\
+\hline
+\end{tabular}
+\leavevmode
+\linebreak
+\\ They would be added in the following order
+\leavevmode
+\\
+A-E \\ E-F \\ B-F \\ F-G \\ G-H \\ C-G \\ D-G
+\end{center}
+\pagebreak
+\subsection*{2a) Prim's Sort}
+\begin{center}
+\begin{tabular}{ | c | c | c |}
+\hline
+Node Start & Node End & Weight \\
+\hline
+\hline
+A & B & 1 \\
+\hline
+B & C & 2 \\
+\hline
+C & D & 3 \\
+\hline
+A & E & 4 \\
+\hline
+E & F & 5 \\
+\hline
+F & G & 1 \\
+\hline
+G & H & 1 \\
+\hline
+\end{tabular}
+\end{center}
+\subsection*{2b) Kruskal's Algorithm}
+\begin{center}
+\begin{tabular}{ | c | c | c |}
+\hline
+Node Start & Node End & Weight \\
+\hline
+\hline
+A & B & 1 \\
+\hline
+B & C & 2 \\
+\hline
+C & G & 2 \\
+\hline
+F & G & 1 \\
+\hline
+G & H & 1 \\
+\hline
+G & D & 1 \\
+\hline
+A & E & 4 \\
+\hline
+\end{tabular}
+\end{center}
+\leavevmode
+\newline
+\subsection*{3}
+\leavevmode
+\\
+If G's pointers $>$ 1 \newline
+Follow the pointers until they connect. If they connect, remove the most weighted edge connected to G.
+
+\pagebreak
+\section{Cost / Complexity  / Big O}
+\subsection*{Equation A}
+\leavevmode \\
+This is a divide and conquer algorithm, it has a running time of, \textbf{O(nLog(n))}
+\\
+\subsection*{Equation B}
+\leavevmode \\
+This is a recursive algorithm, and it has a run time of, \textbf{O(n)}
+\\
+\subsection*{Equation C}
+\leavevmode \\
+This is a 3-way merge sort, it has a running time of, \textbf{O(nLog(n))}
+\\
+\subsection*{}
+\leavevmode \\
+I would pick the divide and conquer, while it has a larger set-up that takes more memory it can sort the pieces quicker.
+
+\pagebreak
+
+\section{Algorithmic Efficiency}
+\leavevmode \\
+A linked sequence algorithm,   you take the number you’re looking for and find the spot in the array it should be, if it’s not there then take the number you did find and go to the place in the array repeat until x is found.   If you come back across a number you originally found, exit that loop and pick a different number, but the chance of this happening is very small.
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
