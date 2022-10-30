@@ -67,8 +67,30 @@ D & H & 7 \\
 \linebreak
 \\ They would be added in the following order
 \leavevmode
-\\
-A-E \\ E-F \\ B-F \\ F-G \\ G-H \\ C-G \\ D-G
+\end{center}
+
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+Node & Connection & Connection & Connection & Connection & Added \\
+\hline \hline
+ & 1-weight & 2-weight & 3-weight & 4-weight & Edge \\
+ \hline
+ A & E-1 & B-6 & & & A-E-1 \\
+ \hline
+ B & A-6 & E-2 & F-2 & C-5 & B-E $||$ F-2 \\
+ \hline
+ C & B-5 & F-5 & G-4 & D-6 & C-G-4 \\
+ \hline
+ D & C-6 & H-7 & G-5 & & D-G-5 \\
+ \hline
+ E & A-1 & B-2 & F-1 & & E-F-1 \\
+ \hline
+ F & E-1 & B -2 & C-5 & G-3 & F-G-3 \\
+ \hline
+ G & F-3 & C-4 & D-5 & H-3 & G-H-3 \\
+ \hline
+\end{tabular}
 \end{center}
 \pagebreak
 \subsection*{2a) Prim's Sort}
@@ -92,7 +114,10 @@ F & G & 1 \\
 \hline
 G & H & 1 \\
 \hline
-\end{tabular}
+\end{tabular} \\
+A, B, C, D, E, F, G, H \\
+A-H\\
+1, 2, 3, 4, 5, 1, 1\\
 \end{center}
 \subsection*{2b) Kruskal's Algorithm}
 \begin{center}
@@ -122,8 +147,12 @@ A & E & 4 \\
 \subsection*{3}
 \leavevmode
 \\
-If G's pointers $>$ 1 \newline
-Follow the pointers until they connect. If they connect, remove the most weighted edge connected to G.
+Start at Node (1 $||$ A) = x \\
+For every edge branching from x, create * to go to that edge to the new node. \\
+For every new node create a pointer to go down that edge. \\
+When two pointers meet, delete one of the paths the pointer took. \\
+\\
+If no pointers cross then there is no edge you can remove from G without leaving it unconnected.
 
 \pagebreak
 \section{Cost / Complexity  / Big O}
@@ -148,6 +177,35 @@ I would pick the divide and conquer, while it has a larger set-up that takes mor
 \section{Algorithmic Efficiency}
 \leavevmode \\
 A linked sequence algorithm,   you take the number you’re looking for and find the spot in the array it should be, if it’s not there then take the number you did find and go to the place in the array repeat until x is found.   If you come back across a number you originally found, exit that loop and pick a different number, but the chance of this happening is very small.
+
+\pagebreak
+
+\section{Quicksort}
+\leavevmode \\
+\subsection{i.}
+\leavevmode \\
+
+\subsection{ii.}
+\leavevmode \\
+Since point p is the pivot if i = j and they equal p that mean they have both reached the pivot point which was declared as the center and would be the point that everything would be sorted around. Not only that but it does also sort the middle point so there is no point that is missed.
+
+\subsection{iii.}
+\leavevmode \\
+The reason why j cannot point to an element more than one position to the left of the one pointed at by i is because if it did then they would be overlapping or they would be missing elements in the sort and that would cause for an incorrect sort. 
+
+\subsection{iv.}
+\leavevmode \\
+The example given in the book is a great example, of why quick sort is not stable. “… if an input list contains two equal elements in positions i and j where i $<$ j, then in the sorted list they have to be in positions i’ and j’, respectively, such that i’ $<$ j’.” (Levitin 19,20)\footnote{Levitin, Anany. Introduction to the Design and Analysis of Algorithms. 3rd ed., Pearson, 2012}. Levitin also gives a great example and that is that if we were to sort students with their GPA’s. If we have multiple students with the same GPA it should sort by name next but quick sort won’t do that.
+
+\subsection{v.}
+\subsubsection{1. All elements are equal}
+\leavevmode \\
+This would be a worst case scenario and this is because it will still cycle through all values in the array, and attempt to sort it.
+
+\subsubsection{2. Strictly decreasing}
+\leavevmode \\
+This would also be a worst case scenario because quicksort would leave one whole subarray empty after the split at the pivot point.
+
 
 
 

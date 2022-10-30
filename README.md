@@ -1,4 +1,4 @@
-# CSCI310 - pmgrattino
+# CSCI250 - pmgrattino
 
 | Name                | Value                                       |
 | :------------------ | :------------------------------------------ |
@@ -37,3 +37,18 @@
 | Location      | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/Ass2/      |
 | Self Grade    | NA/20                                                              |
 | Notes         |                                                                    |
+
+## Kattis Solutions (Extra Credit)
+
+### Landline
+
+| Name            | Value                                                                                          |
+| :-------------- | :--------------------------------------------------------------------------------------------- |
+| Name            | Landline                                                                                       |
+| Description     | Kattis Problem trying to connect a landline network                                            |
+| Link to problem | https://open.kattis.com/problems/landline                                                      |
+| Due Date        | 5-Dec-22                                                                                       |
+| Status          | In Progress                                                                                    |
+| Location        | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/CS250_CS250_Competitive_Coder/landline |
+| Grade           | Extra Credit                                                                                   |
+| Notes           | NA                                                                                             |
