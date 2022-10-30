@@ -10,12 +10,13 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class readSort{
 public:
-    string readFile(string);
+    string readFile(string &fileName);
 };
 
 #endif /* readSort_hpp */
