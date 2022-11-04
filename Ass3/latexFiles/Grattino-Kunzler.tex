@@ -1,0 +1,67 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\geometry{letterpaper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Intro to Algorithms Assignment 3 Group Task}
+\author{Alex Kunzler \& Peyton Grattino}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+\pagebreak
+\setcounter{secnumdepth}{1}
+\section{Task 2}
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c |}
+\hline
+& 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\hline
+0 & $\infty$ & 6 & 10 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\
+\hline
+1 & 6 & $\infty$ & 12 & 11 & 14 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ \\
+\hline
+2 & 10 & 12 & $\infty$ & 12 & $\infty$ & $\infty$ & 8 & 16 & $\infty$ & $\infty$ \\
+\hline
+3 & $\infty$ & 11 & 12 & $\infty$ & $\infty$ & 6 & 3 & $\infty$ & $\infty$ & $\infty$ \\
+\hline
+4 & $\infty$ & 14 & $\infty$ & $\infty$ & $\infty$ & 4 & $\infty$ & $\infty$ & 6 & $\infty$ \\
+\hline
+5 & $\infty$ & $\infty$ & $\infty$ & 6 & 4 & $\infty$ & $\infty$ & $\infty$ & 12 & $\infty$ \\
+\hline
+6 & $\infty$ & $\infty$ & 8 & 3 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 16 & 6 \\
+\hline
+7 & $\infty$ & $\infty$ & 16 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 8 \\
+\hline
+8 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 6 & 12 &16 & $\infty$ & $\infty$ & 13 \\
+\hline
+9 & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 6 & 8 & 13 & $\infty$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Efficiency Heap Algorithm}
+\leavevmode \\
+start node x //the head of the tree \\
+Go to the left node //the left side should always be less than x \\
+REPEAT UNTIL CAN'T GO FURTHER \\
+Go down smallest valued path\\
+if smallest node is last node\\
+\indent delete\\
+else\\
+\indent swap this node with the rightmost leaf on the left side\\
+\indent delete\\
+\\
+Use a sortheap command to check, and resort to make sure that it is still a heap.
+
+
+\end{document}

@@ -13,27 +13,32 @@
 
 using namespace std;
 
-std::string readSort::readFile(std::string &fileName){
+string readSort::readFile(string fileName){
     auto start = chrono::steady_clock::now(); //starting the timer
 
     ifstream fin;
-    fin.open(fileName);
-    std::string rFile; //saving the file
-
+    string rFile; //saving the file
+    int fileSize = 0;
+    char* data;
+    
+    fin.open(fileName, ios::in | ios::binary);
+    if (fin.good()){
+        fin.seekg(0, ios::end);
+        fileSize = (int)fin.tellg();
+        data = new char [fileSize];
+        fin.seekg(ios::beg);
+        fin.read(data, fileSize);
+        rFile = static_cast<string>(data);
+    }
     auto stop = chrono::steady_clock::now(); //stopping the timer
     if (!fin){
         cout << "Could not open file" << endl;
-        cout << rFile;
+        return 0;
     } else {
         chrono::duration<double> runD = stop - start;    //runD is the time it took to read
         cout << "Text read! Time to read:" << runD.count() << endl;
         return rFile;
     }
-    fin.close();
-//    ifstream fin(userInFile);
-//    string rFile;
-//    rFile.assign((istreambuf_iterator<char>(fin)),(istreambuf_iterator<char>()));
-//    if (rFile == "")
-//        cout << "No rFile" << endl;
-    return rFile;
+    return 0;
 }
+

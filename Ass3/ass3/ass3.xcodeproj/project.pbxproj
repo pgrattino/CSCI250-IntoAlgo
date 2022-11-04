@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9CF8425C290E349A006A12C6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8425B290E349A006A12C6 /* main.cpp */; };
 		9CF84266290E46E4006A12C6 /* readSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF84264290E46E4006A12C6 /* readSort.cpp */; };
+		9CF8426A290F4978006A12C6 /* horspool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF84269290F4978006A12C6 /* horspool.cpp */; };
+		9CF8426C290F6ED7006A12C6 /* karpRabin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8426B290F6ED7006A12C6 /* karpRabin.cpp */; };
+		9CF8426E290F7D69006A12C6 /* kmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8426D290F7D69006A12C6 /* kmp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +30,11 @@
 		9CF84258290E349A006A12C6 /* ass3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ass3; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8425B290E349A006A12C6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9CF84264290E46E4006A12C6 /* readSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readSort.cpp; sourceTree = "<group>"; };
-		9CF84267290E4D08006A12C6 /* readSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readSort.h; sourceTree = "<group>"; };
+		9CF84267290E4D08006A12C6 /* readSort.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = readSort.h; sourceTree = "<group>"; };
 		9CF84268290F14B9006A12C6 /* Bohemia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bohemia.txt; sourceTree = "<group>"; };
+		9CF84269290F4978006A12C6 /* horspool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = horspool.cpp; sourceTree = "<group>"; };
+		9CF8426B290F6ED7006A12C6 /* karpRabin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = karpRabin.cpp; sourceTree = "<group>"; };
+		9CF8426D290F7D69006A12C6 /* kmp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kmp.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +67,13 @@
 		9CF8425A290E349A006A12C6 /* ass3 */ = {
 			isa = PBXGroup;
 			children = (
+				9CF84268290F14B9006A12C6 /* Bohemia.txt */,
+				9CF84267290E4D08006A12C6 /* readSort.h */,
 				9CF8425B290E349A006A12C6 /* main.cpp */,
 				9CF84264290E46E4006A12C6 /* readSort.cpp */,
-				9CF84267290E4D08006A12C6 /* readSort.h */,
-				9CF84268290F14B9006A12C6 /* Bohemia.txt */,
+				9CF8426B290F6ED7006A12C6 /* karpRabin.cpp */,
+				9CF84269290F4978006A12C6 /* horspool.cpp */,
+				9CF8426D290F7D69006A12C6 /* kmp.cpp */,
 			);
 			path = ass3;
 			sourceTree = "<group>";
@@ -126,6 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF8426C290F6ED7006A12C6 /* karpRabin.cpp in Sources */,
+				9CF8426A290F4978006A12C6 /* horspool.cpp in Sources */,
+				9CF8426E290F7D69006A12C6 /* kmp.cpp in Sources */,
 				9CF8425C290E349A006A12C6 /* main.cpp in Sources */,
 				9CF84266290E46E4006A12C6 /* readSort.cpp in Sources */,
 			);
