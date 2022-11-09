@@ -19,7 +19,7 @@ public:
     string readFile(string);
     int kr(string, string, int);
     int krCount();
-    int shiftTable(string);
+    int *shiftTable(string);
     int horspool(string, string);
     int horspoolCount();
     int kmp(string, string);

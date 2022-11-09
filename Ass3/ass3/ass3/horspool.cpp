@@ -11,30 +11,31 @@
 #include "readSort.h"
 
 int hpComp; //This is the number of compairs
-int hpTable[26]; //this is the table for the shiftTable
+//int hpTable[26]; //this is the table for the shiftTable
 int hpTotal;
 
-int readSort::shiftTable(string searchTerm) //this was pulled from the textbook
+int* readSort::shiftTable(string searchTerm) //this was pulled from the textbook
 {
-    for(int i = 0; i <= 25; i++)
+    int hpTable[searchTerm.length() - 1];
+    for(int i = 0; i <= searchTerm.length() - 1; i++)
     {
         hpTable[i] = (int)searchTerm.length();
     }
-    for(int p = 0; p <= searchTerm.length() - 2; p++)
+    for(int j = 0; j <= searchTerm.length() - 2; j++)
     {
-        hpTable[searchTerm[p]] = (int)searchTerm.length() - 1 - p;
+        hpTable[searchTerm[j]] = (int)searchTerm.length() - 1 - j;
     }
-    return hpTable[25];
+    return (int*) hpTable[searchTerm.length() - 1];
 }
 
 int readSort::horspool(string searchTerm, string rFile) //found the code in the book
 {
-    shiftTable(searchTerm);
+    int* hpTable = shiftTable(searchTerm);
     int i = (int)searchTerm.length() - 1;
-    while (i <= searchTerm.length() - 1) {
-        hpComp++; //Increase the number of compairisons
+    while (i <= rFile.length() - 1) {
+//        hpComp++; //Increase the number of compairisons
         int k = 0;
-        while (k <= searchTerm.length() - 1 && searchTerm[i - 1 - k] == rFile[i - k]){
+        while (k <= searchTerm.length() - 1 && searchTerm[searchTerm.length() - 1 - k] == rFile[i - k]){
             hpComp++;
             k++;
         }
