@@ -26,28 +26,33 @@ int readSort::kr(string searchTerm, string rFile, int q){
     int j, i; //for the for loop
     int h = 1;
     
-    for (i = 0; i < M; i++)
-        h = (h * d) % q;
+    for (i = 0; i < M - 1; i++)
+    h = (h * d) % q;
     for (i = 0; i < M; i++){
+        p = (d * p + searchTerm[i]) % q;
+        t = (d * t + rFile[i]) % q;
+    }
+    for (i = 0; i <= N - M; i++){
         if (p == t){
+            krComp++;
             for (j = 0; j < M; j++) {
-                krComp++;
                 if (rFile[i + j] != searchTerm[j]){
                     krComp++;
                     break;
                 }
             }
             if (j == M){
+                krOccr++;
                 krComp++;
                 //return i - searchTerm.length() + 1;
-                krOccr++;
             }
-            if (i < N - M) {
-                krComp++;
-                t = (d * (t - rFile[i] * h) + rFile[i + M]) % q;
-                if (t < 0)
-                    t = (t + q);
-            }
+            
+        }
+        if (i < N - M) {
+            krComp++;
+            t = (d * (t - rFile[i] * h) + rFile[i + M]) % q;
+            if (t < 0)
+            t = (t + q);
         }
     }
     return krOccr;

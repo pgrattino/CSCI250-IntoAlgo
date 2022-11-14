@@ -13,22 +13,9 @@
 
 using namespace std;
 
+int kmpComp;
+
 void readSort::CPF(string searchTerm, int m, int* lps){
-//    int m = searchTerm.length();
-//    int lps[searchTerm.length()];
-//    lps[0] = 0;
-//    int k = 0;
-//
-//    for (int q = 2; q <= m; q++){
-//        while (k > 0 && searchTerm[k + 1] != searchTerm[q]){
-//            k = lps[k];
-//        }
-//        if (searchTerm[k+1] == searchTerm[q]){
-//            k = k + 1;
-//        }
-//        lps[q] = k;
-//    }
-//    return lps[0];
     int len = 0;
     
     lps[0] = 0;
@@ -56,26 +43,9 @@ void readSort::CPF(string searchTerm, int m, int* lps){
 }
 
 int readSort::kmp(string searchTerm, string rFile){
-//    int m = searchTerm.length();
-//    int n = rFile.length();
-//    int lps = CPF(searchTerm);
-//    int q = 0;
-//    for (int i = 1; i <= n; i++){
-//        while (q > 0 && searchTerm[q + 1] != rFile[i]){
-//            q = lps[q - 1];
-//        }
-//        if (searchTerm[q + 1] == rFile[i]){
-//            q++;
-//        }
-//        if (q == m){
-//            cout << "pattern occurs with shift " << i - m << endl;
-//            q = lps[q];
-//        }
-//    }
-//    return -1;
     int m = (int) searchTerm.length();
     int n = (int) rFile.length();
-    int kmpCount;
+    int kmpCount =0;
     
     int lps[m];
     
@@ -87,17 +57,20 @@ int readSort::kmp(string searchTerm, string rFile){
     {
         if (searchTerm[j] == rFile[i])
         {
+            kmpComp++;
             j++;
             i++;
         }
         if (j == m)
         {
-            cout << "Found pattern at point: " << i - j;
+            kmpComp++;
+            //cout << "Found pattern at point: " << i - j;
             kmpCount++;
             j = lps[j - 1];
         }
         else if (i < n && searchTerm[j] != rFile[i])
         {
+            kmpComp++;
             if (j != 0)
                 j = lps[j-1];
             else
@@ -105,4 +78,8 @@ int readSort::kmp(string searchTerm, string rFile){
         }
     }
     return kmpCount;
+}
+
+int readSort::kmpCompair(){
+    return kmpComp;
 }

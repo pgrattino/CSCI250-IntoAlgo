@@ -55,9 +55,10 @@ int main(int argc, const char * argv[]) {
         int kmpSort, kmpComp;
         auto kmpStart = chrono::steady_clock::now();
         kmpSort = r.kmp(searchTerm, rFile);
+        kmpComp = r.kmpCompair();
         auto kmpStop = chrono::steady_clock::now();
         chrono::duration<double> kmpRunT = kmpStop - kmpStart;
-        cout << "KMP: \n - Number of occurrences in the text is: " << kmpSort << "\n - Number of Comparisons: "<< /*Comp goes here*/ 0 << "\n - Time: " << kmpRunT.count() << " milliseconds" << endl;
+        cout << "KMP: \n - Number of occurrences in the text is: " << kmpSort << "\n - Number of Comparisons: "<< kmpComp << "\n - Time: " << kmpRunT.count() << " milliseconds" << endl;
         
     } else if (userIn == 'q' || userIn == 'Q'){
         return 0;

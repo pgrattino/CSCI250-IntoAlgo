@@ -24,6 +24,7 @@ public:
     int horspoolCount();
     int kmp(string, string);
     void CPF(string, int, int*);
+    int kmpCompair();
 };
 
 #endif /* readSort_hpp */
