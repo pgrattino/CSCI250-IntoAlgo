@@ -1,0 +1,97 @@
+
+\documentclass[12pt]{amsart}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\geometry{letterpaper} % or letter or a5paper or ... etc
+\usepackage{adjustbox}
+%\usepackage{floatrow}
+%\DeclareFloatFont{tiny}{\tiny}
+%\floatsetup[table]{font = tiny}
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Reading Research Individual Assignment}
+\author{Peyton Grattino}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\maketitle
+\tableofcontents
+%\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\pagebreak
+
+\setcounter{secnumdepth}{0}
+\section{7.1}
+\hfill\break
+\subsection{Question 10}
+\hfill\break
+From an efficiency standpoint it is not a good idea. What should be stored is the possible branches of the game that are possible and result in a win. Using this idea, it will cut back on the runtime and CPU usage, when the computer goes to find its next move. If there is a move outside of what the computer has mapped it will result in a loss.
+
+\newpage
+\section{7.2}
+\hfill\break
+\subsection{Question 2}
+\hfill\break
+\subsubsection{a}
+This is the shift table for the pattern: TCCTATTCTT \hfill\break
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+A & B & C & ... & T & ...\\
+\hline
+5 & 10 & 2 & 10 & 1 & 10 \\
+\hline
+\end{tabular}
+\end{center}
+\hfill\break
+\subsubsection{b}
+If the shift table above was applied to the the pattern: \hfill\break
+\begin{center}
+TTATAGATCTCGTATTCTTTTATAGATCTCCTATTCTT
+\end{center}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c |}
+\hline
+T & T & A & T & A & G & A & T & C & T & C & G & T & A & T & T & C & T & T & T & T & A & T & A & G & A & T & C & T & C & C & T & A & T & T & C & T & T \\
+\hline
+T & C & C & T & A & T & T & C & T & T & & & &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+& T & C & C & T & A & T & T & C & T & T & & & &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+& & & T & C & C & T & A & T & T & C & T & T & & & &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\hline
+& & & & & & & & & & & & T & C & C & T & A & T & T & C & T & T & & & & & & & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & & & & & & & T & C & C & T & A & T & T & C & T & T & & & & & & & & & & & \\
+\hline
+& & & & & & & & & & & & & & & & & & & & & T & C & C & T & A & T & T & C & T & T & & & & & & &\\
+\hline
+& & & & & & & & & & & & & & & & & & & & & & & T & C & C & T & A & T & T & C & T & T & & & & &\\
+\hline
+& & & & & & & & & & & & & & & & & & & & & & & & & & & & T & C & C & T & A & T & T & C & T & T\\
+\hline
+\end{tabular}
+\end{adjustbox}
+\hfill\break
+
+\subsection{Question 4}
+\hfill\break
+\subsubsection{a} The worst case for Horspool would be if you were looking for one character and it was at the very end of the file.
+\subsubsection{b} The best case would be the pattern that we are matching was the exact same length of our file. It the number of comparisons would be equal to that of the length of our pattern.
+
+\hfill\break
+\subsection{Question 6}
+\hfill\break
+If Horspool's algorithm finds a matching substring, it should shift the same amount as if it was a mismatch. 
+\hfill\break
+\subsection{Question 8}
+\hfill\break
+\subsubsection{a}
+Yes, Boyer-Moore algorithm would work with the bad-symbol table. \hfill\break
+\subsubsection{b}
+No, both tables are required for Boyer-Moore to work. If there was only the good-suffix table then the algorithm would get lost after the first characters mismatch.
+
+
+\end{document}
