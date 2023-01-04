@@ -20,7 +20,7 @@
 | Group members | Peyton Grattino & Alex Kunzler                                             |
 | Description   | Solving Various problems and writing up solutions using LaTex code         |
 | Due Date      | 14-Sep-22                                                                  |
-| Status        | Done                                                                       |
+| Status        | Submitted                                                                  |
 | Location      | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/Ass1/LaTex%20Files |
 | Grade         | 14/20                                                                      |
 | Notes         | Original PDF of assignment was not submitted due to lack of ownership      |
@@ -33,22 +33,31 @@
 | Group members | Peyton Grattino & Alex Kunzler                                     |
 | Description   | Solving Various problems and writing up solutions using LaTex code |
 | Due Date      | 6-Oct-22                                                           |
-| Status        | In progress                                                        |
+| Status        | Submitted                                                          |
 | Location      | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/Ass2/      |
-| Self Grade    | NA/20                                                              |
+| Self Grade    | 20/20                                                              |
 | Notes         |                                                                    |
 
-## Kattis Solutions (Extra Credit)
+### Assignment #3
 
-### Landline
+| Name          | Value                                                         |
+| :------------ | :------------------------------------------------------------ |
+| Name          | Assignment 3                                                  |
+| Group members | Peyton Grattino & Alex Kunzler                                |
+| Description   | Sorting algorithms in C++ and written LaTex solutions         |
+| Status        | Submitted                                                     |
+| Location      | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/Ass3/ |
+| Self Grade    | 17/20                                                         |
+| Notes         | Horspool is not working in this solution                      |
 
-| Name            | Value                                                                                          |
-| :-------------- | :--------------------------------------------------------------------------------------------- |
-| Name            | Landline                                                                                       |
-| Description     | Kattis Problem trying to connect a landline network                                            |
-| Link to problem | https://open.kattis.com/problems/landline                                                      |
-| Due Date        | 5-Dec-22                                                                                       |
-| Status          | In Progress                                                                                    |
-| Location        | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/CS250_CS250_Competitive_Coder/landline |
-| Grade           | Extra Credit                                                                                   |
-| Notes           | NA                                                                                             |
+### Assignment #4
+
+| Name          | Value                                                         |
+| :------------ | :------------------------------------------------------------ |
+| Name          | Assignment 4                                                  |
+| Group members | Peyton Grattino                                               |
+| Description   | Sorting algorithms in C++ and written LaTex solutions         |
+| Status        | Submitted                                                     |
+| Location      | https://github.com/pgrattino/CSCI250-IntoAlgo/tree/main/Ass4/ |
+| Self Grade    | 17/20                                                         |
+| Notes         | Horspool is not working in this solution                      |
